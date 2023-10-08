@@ -1,0 +1,14 @@
+http://localhost, http://127.0.0.1 {
+	@options {
+		method OPTIONS
+	}
+	header {
+		Access-Control-Allow-Origin *
+		Access-Control-Allow-Credentials true
+		Access-Control-Allow-Methods *
+		Access-Control-Allow-Headers *
+		defer
+	}
+    file_server /*
+	respond @options 204
+}
